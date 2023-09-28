@@ -61,6 +61,7 @@ public partial class MonkeysViewModel : BaseViewModel
         finally
         {
             IsBusy = false;
+            IsRefreshing = false;
         }
 
     }
@@ -99,4 +100,10 @@ public partial class MonkeysViewModel : BaseViewModel
             await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
         }
     }
+
+    [ObservableProperty]
+    bool isRefreshing;
+   
+
+
 }
