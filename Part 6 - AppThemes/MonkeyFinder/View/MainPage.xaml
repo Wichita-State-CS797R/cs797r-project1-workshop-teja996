@@ -56,6 +56,10 @@
                                             Padding="10">
                                             <Label Style="{StaticResource LargeLabel}" Text="{Binding Name}" />
                                             <Label Style="{StaticResource MediumLabel}" Text="{Binding Location}" />
+                                            <Label Text="Hello, world!" 
+                                                   TextColor="{AppThemeBinding Light={StaticResource LabelText}, Dark={StaticResource LabelTextDark}}"/>
+                                            <Label Text="Hello, world!" 
+                                                   Style="{StaticResource DefaultLabel}"/>
                                         </VerticalStackLayout>
                                     </Grid>
                                 </Frame>
